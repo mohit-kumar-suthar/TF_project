@@ -1,4 +1,12 @@
-.footer p{
+.footer {
     position:absolute;
     bottom:0;
+    color:lightgrey;
+}
+.footer strong{
+    color:grey;
+}
+
+.footer p{
+    color:lightgrey;
 }
