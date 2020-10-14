@@ -3,7 +3,12 @@
 {% block title %}footer{% endblock %}
 {% block body %}
 <div class="footer">
-<p>Updated on Monday</p>
+    <p id="demo"></p>
+
+    <script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d;
+    </script>
 </div>
 
 {% endblock %}
