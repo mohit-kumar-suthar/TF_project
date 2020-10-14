@@ -9,7 +9,7 @@ expire_time=''
 
 def encode(email,user_time):
     global expire_time
-    expire_time = 1000
+    expire_time = 100
     user=User.objects.get(email=email)
     token = str(user_time)+user.username+email+str(user.pk)
     token = hashlib.sha1(token.encode()).hexdigest()
