@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block body %}
+{% include 'header.html' %}
+
+{% if activate_form %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-4 main-form">
+            <form method="post">
+                {% csrf_token %}
+                <p>{{activate_form.errors.password}}</p>
+                <legend>Acccount Activation Form</legend><hr>
+                <div class="form-group">
+                    {{activate_form.email}}
+                </div>
+                <div class="form-group">
+                    {{activate_form.password}}
+                </div>
+                <input type="submit" class="btn btn-outline-primary"  value="Activate">
+            </form>
+        </div> 
+    </div>
+</div>
+{% endif %}
+
+{% if reset_form %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-4 main-form">
+            <form method="post">
+                {% csrf_token %}
+                <p>{{reset_form.errors.re_password}}</p>
+                <legend>Password Reset Form</legend><hr>
+                <div class="form-group">
+                    {{reset_form.email}}
+                </div>
+                <div class="form-group">
+                    {{reset_form.password}}
+                </div>
+                <div class="form-group">
+                    {{reset_form.re_password}}
+                </div>
+                <input type="submit" name='reset' class="btn btn-outline-primary"  value="Reset Password">
+            </form>
+        </div> 
+    </div>
+</div>
+{% endif %}
+
+{% if forgot_form %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            {%if email%}
+            <div class="form_error">
+                <p>forgot password link send to {{email}}  </p>
+            </div>
+           
+            {%endif%}
+        </div>
+        <div class="col-md-4 main-form">
+            <form method="post">
+                {% csrf_token %}
+                <p>{{forgot_form.errors.email}}</p>
+                <legend>Forgot Password Form</legend><hr>
+                <div class="form-group">
+                    {{forgot_form.email}}
+                </div>
+                <input type="submit" name='forgot'class="btn btn-outline-primary"  value="Forgot Password">
+            </form>
+        </div> 
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}

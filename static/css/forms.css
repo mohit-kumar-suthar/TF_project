@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.form-control,.btn{
+    border-radius: 20px;
+}
+
+.forgot-link{
+    float: right;
+    margin-top:7px;
+    margin-right:40px;
+}
+
+
+

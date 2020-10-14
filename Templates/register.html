@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+{% include 'header.html' %}
+<div class="container">
+    <div class="row" >
+        <div class="col-md-8"> </div>
+        <div class="col-md-4">
+            {%if register_form.errors%}
+                <div class="form_error">
+                    <p>{{register_form.errors.username}}</p>
+                    <p>{{register_form.errors.email}}</p>
+                    <p>{{register_form.errors.re_password}}</p>
+                </div>
+                {% endif %}
+                {%if email%}
+                <div class="form_error">
+                    <p>account registered successfully from {{email}}</p>
+                </div>
+               
+                {%endif%}
+            <form method="POST">
+                {% csrf_token %}
+                <legend>Register</legend><hr>
+                <div class="form-group" >
+                    {{register_form.username}}
+
+                </div>
+                <div class="form-group">
+                    {{register_form.email}}
+                  
+                </div>
+                <div class="form-group">
+                    {{register_form.password}}
+                </div>
+                <div class="form-group">
+                    {{register_form.re_password}}
+                </div>
+                <input type="submit" name='register_submit' class="btn btn-outline-success" value='Register'>
+                <a class ='forgot-link' href="{% url 'forgot_password' %}"> Forgot Password</a>
+            </form>
+        </div>  
+    </div>
+</div>
+{% endblock %}
