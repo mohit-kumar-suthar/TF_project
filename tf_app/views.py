@@ -61,7 +61,6 @@ def activate_view(request,token):
                 if not user.is_active:
                     user.is_active=True
                     user.save()
-                    print('ho ja redirect')
                     return redirect('login')
                 else:
                     return HttpResponse("invalid")
