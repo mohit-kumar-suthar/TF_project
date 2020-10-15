@@ -90,7 +90,11 @@ body{
         color:black;
         font-family:Arial;
     }
-
+    .menu a:hover{
+      
+        background-color:gray;
+        color:yellow;
+    }
     .logo{
         float:none;
         display: flex;
