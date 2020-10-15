@@ -90,11 +90,6 @@ body{
         color:black;
         font-family:Arial;
     }
-    .menu a:hover{
-      
-        background-color:gray;
-        color:yellow;
-    }
     .logo{
         float:none;
         display: flex;
@@ -106,15 +101,21 @@ body{
         display: none;
         position: relative;
         z-index: 2;
+        box-shadow:0px 0px 30px -10px gray;
+        border-radius: 0 0 15px 15px;
+        
     }
 
     .main-header_nav a{
         padding:10px;
         display:block;
-        background-color:lightblue;
+        background-color:whitesmoke;
         width:100%;
         text-align: center;
     
+    }
+    .main-header_nav a:hover{
+        border-radius: 15px 15px 15px 15px; 
     }
     .account-link{
         position:static;
