@@ -44,7 +44,9 @@ body{
     color:black;
 }
 
-.main-header_nav a:hover{
+.main-header_nav a:hover,
+.main-header_nav a:active,
+.main-header_nav a.active{
     color:yellow;
     background-color:gray;
     transition:0.5s;

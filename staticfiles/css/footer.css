@@ -1,0 +1,6 @@
+.footer p{
+    position:absolute;
+    bottom:0;
+    color: gray;
+    left:20px;
+}
