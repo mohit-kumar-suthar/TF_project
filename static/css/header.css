@@ -109,8 +109,9 @@ body{
         display:block;
         width:100%;
         text-align: center;
+        background-color:whitesmoke;
         border-radius: 0 0;
-
+        border-radius: 0 0 15px 15px;
     
     }
     .main-header_nav a:hover{
