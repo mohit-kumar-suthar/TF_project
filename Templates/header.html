@@ -13,6 +13,13 @@ crossorigin="anonymous"></script>
           });
       });
 
+      $(document).ready(function() {
+        $(".main-header_nav li a").click(function () {
+            $(".main-header_nav li a").removeClass("active");
+            $(this).addClass("active");   
+        });
+        });
+
   </script>
 {% endblock %}
 
@@ -31,30 +38,24 @@ crossorigin="anonymous"></script>
     <nav class="main-header_nav ">
         <ul class="main-header_item-list">
             <li class="main-header_item">
-                <a  href="{% url 'home' %}">Home</a>
+                <a   href="{% url 'home' %}">Home</a>
             </li>
             <li class="main-header_item">
                 <a  href="{% url 'project' %}">Projects</a>
             </li>
             <li class="main-header_item">
-                <a  href="{% url 'source_code' %}">Source code</a>
+                <a   href="{% url 'blog' %}">Blogs</a>
             </li>
             <li class="main-header_item">
-                <a  href="{% url 'blog' %}">Blogs</a>
-            </li>
-            <li class="main-header_item">
-                <a  href="{% url 'member' %}">Become member</a>
-            </li>
-            <li class="main-header_item">
-                <a  href="{% url 'about' %}">About me</a>
+                <a   href="{% url 'about' %}">About me</a>
             </li>
         </ul>
         <ul class='account-link'>
             <li class="main-header_item">
-                <a  href="{% url 'login' %}">Login</a>
+                <a   href="{% url 'login' %}">Login</a>
             </li>
             <li class="main-header_item">
-                <a href="{% url 'register' %}">Register</a>
+                <a  href="{% url 'register' %}">Register</a>
             </li>
         </ul>
     </nav>

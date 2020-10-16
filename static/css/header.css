@@ -26,7 +26,6 @@ body{
 .logo a{
     text-decoration: none;
     font-family:'Gill Sans';
-   
 }
 .main-header{
     background-color:whitesmoke;
@@ -50,8 +49,7 @@ body{
 }
 
 .main-header_nav a:hover,
-.main-header_nav a:active,
-.main-header_nav a.active{
+.active{
     color:yellow;
     background-color:gray;
     transition:0.5s;
@@ -76,7 +74,7 @@ body{
  display:none;
 }
 
-@media all and (max-width:925px){
+@media all and (max-width:700px){
     .menu{
        display:inline;
        position: fixed;
@@ -127,8 +125,3 @@ body{
         display: inline;
     }
 }
-
-
-
-
-
