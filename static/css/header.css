@@ -99,7 +99,7 @@ body{
         position: relative;
         z-index: 2;
         box-shadow:0px 0px 30px -10px gray;
-        border-radius: 0 0 15px 15px;
+        background-color:whitesmoke;
         
     }
 
@@ -109,6 +109,8 @@ body{
         width:100%;
         text-align: center;
         background-color:whitesmoke;
+        border-radius: 0 0;
+
     
     }
     .main-header_nav a:hover{
