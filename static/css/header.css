@@ -100,7 +100,6 @@ body{
         z-index: 2;
         box-shadow:0px 0px 30px -10px gray;
         border-radius: 0 0 15px 15px;
-        background-color:whitesmoke;
         
     }
 
@@ -109,7 +108,7 @@ body{
         display:block;
         width:100%;
         text-align: center;
-        border-radius: 0 0 0 0;
+        background-color:whitesmoke;
     
     }
     .main-header_nav a:hover{
