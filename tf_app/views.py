@@ -45,7 +45,7 @@ def register_view(request):
             token = encode(email,user_detail.date_joined)
             send('register',username,email,token)
             return render(request,'register.html',{
-                'register_form':form,
+                'register_form':register(),
                 'email':email,
             })
     return render(request,'register.html',{'register_form':form})

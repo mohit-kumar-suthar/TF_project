@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'oe(_-$%hxky^4$!!1^fzf7qox0v_i^xfsv7#wj@&c#1go96vxp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['teamfirecode.herokuapp.com','127.0.0.1']
 
@@ -87,13 +87,15 @@ DATABASES = {
 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
 }
 }
-}'''
+}
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
