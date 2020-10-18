@@ -1,3 +1,41 @@
-.project_box{
-    background-color:lightblue;
+.detail{
+    background-color:white;
+   
+}
+.team{
+    float:right;
+}
+.time{
+    float: left;
+}
+.title{
+    background-color:#007CC7;
+    text-align: center;
+    color:white;
+ 
+}
+
+.title-btn a{
+    color:white;
+}
+
+.btn1{ 
+    background-color:gray;
+    
+}
+
+.btn2{ 
+    background-color:gray;
+}
+  
+.btn3{ 
+    background-color:gray;
+ 
+}
+
+
+
+.project{
+    box-shadow:0 10px 10px -5px;
+    border:1px solid;
 }
