@@ -17,20 +17,15 @@
 
 .title-btn a{
     color:white;
+    padding:5px;
+    background-color:gray;
+    border-radius:15px 15px 0 0;
+    text-decoration: none;
 }
 
-.btn1{ 
-    background-color:gray;
-    
-}
-
-.btn2{ 
-    background-color:gray;
-}
-  
-.btn3{ 
-    background-color:gray;
- 
+.title-btn a:hover{
+    background-color:white;
+    color:black;
 }
 
 
