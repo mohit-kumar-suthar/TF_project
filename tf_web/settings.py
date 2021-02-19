@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'oe(_-$%hxky^4$!!1^fzf7qox0v_i^xfsv7#wj@&c#1go96vxp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['teamfirecode.herokuapp.com','127.0.0.1']
 
