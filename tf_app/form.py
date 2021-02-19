@@ -130,12 +130,12 @@ class reset_password(forms.Form):
     }))
     password=forms.CharField(widget=forms.PasswordInput(attrs={
         'class':'form-control',
-        'placeholder':'Password',
+        'placeholder':'New Password',
         'autocomplete':'off',
     }))
     re_password=forms.CharField(widget=forms.PasswordInput(attrs={
         'class':'form-control',
-        'placeholder':'Confirm Password',
+        'placeholder':'Confirm New Password',
         'autocomplete':'off',
     }))
 

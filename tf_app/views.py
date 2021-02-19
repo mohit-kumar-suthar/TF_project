@@ -81,7 +81,7 @@ def forgot_view(request):
             send('password',user_detail.username,email,token)
             return render(request,'email_activate.html',{
                 'email':email,
-                'forgot_form':form,
+                'forgot_form':forgot(),
                 'title':'Forgot Password',
             })
     return render(request,'email_activate.html',{
