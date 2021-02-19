@@ -57,7 +57,7 @@
 {% if forgot_form %}
 <div class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-4">
             {%if email%}
             <div class="form_error">
                 <p>forgot password link send to {{email}}  </p>
@@ -74,10 +74,12 @@
                     {{forgot_form.email}}
                 </div>
                 <input type="submit" name='forgot'class="btn btn-outline-primary"  value="Forgot Password">
-            </form>
+            </form><hr>
+            <a style="float:left;" href="{%url 'login'%}">Click For Login</a>
+            <a style="float:right;" href="{%url 'register'%}">Click For Register</a>
         </div> 
+        <div class="col-md-4"></div>
     </div>
 </div>
 {% endif %}
-{% include 'footer.html' %}
 {% endblock %}

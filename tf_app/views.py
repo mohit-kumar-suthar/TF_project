@@ -94,36 +94,16 @@ def reset_password_view(request,token):
         form = reset_password(initial={'email':user_true.email})
         if request.method == 'POST':
             form = reset_password(request.POST)
-            user_false = decode(token,'password',False)
-            if user_false.is_active:
-                if form.is_valid():
+            if form.is_valid():
+                user_false = decode(token,'password',False)
+                if user_false.is_active:
                     user_false.set_password(form.cleaned_data['password'])
                     user_false.save()
                     return redirect('login')
-            else:
-                return HttpResponse('invalid')
+                else:
+                    return HttpResponse('invalid')
         return render(request,'email_activate.html',{
             'reset_form':form,
             'title':'Reset Password'})
     except:
-        return HttpResponse(user_false)
-
-def index_view(request):
-    return render(request,'index.html')
-
-def project_view(request):
-    return render(request,'project.html')
-
-@login_required(login_url='login')
-def source_code_view(request):
-    return render(request,'source_code.html')
-
-def blog_view(request):
-    return render(request,'blog.html')
-
-@login_required(login_url='login')
-def member_view(request):
-    return render(request,'member.html')
-
-def about_view(request):
-    return render(request,'about.html')
+        return HttpResponse('invalid')

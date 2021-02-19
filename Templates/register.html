@@ -6,7 +6,7 @@
 {% include 'header.html' %}
 <div class="container">
     <div class="row" >
-        <div class="col-md-8"> </div>
+        <div class="col-md-4"> </div>
         <div class="col-md-4">
             {%if register_form.errors%}
                 <div class="form_error">
@@ -23,7 +23,8 @@
                 {%endif%}
             <form method="POST">
                 {% csrf_token %}
-                <legend>Register</legend><hr>
+                <legend>Register</legend>
+                <a href="{%url 'login'%}">Have an account ?</a><hr>
                 <div class="form-group" >
                     {{register_form.username}}
 
@@ -42,7 +43,7 @@
                 <a class ='forgot-link' href="{% url 'forgot_password' %}"> Forgot Password</a>
             </form>
         </div>  
+        <div class="col-md-4"></div>
     </div>
 </div>
-{% include 'footer.html' %}
 {% endblock %}

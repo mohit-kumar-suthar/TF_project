@@ -31,99 +31,10 @@ body{
     background-color:whitesmoke;
     width:100%;
     height:50px;
-    margin-bottom:50px;
+    margin-bottom:100px;
     z-index:5;
     box-shadow:0px 0px 30px -15px whitesmoke;
 }
 
-.main-header_nav{
-    display: flex;
-}
 
-.main-header_nav a{
-    padding:10px; 
-    color:black;
-    border-radius: 0 0 15px 15px;
-    background-color:lightgray;
-    margin-right:10px;
-}
 
-.main-header_nav a:hover{
-    color:yellow;
-    background-color:gray;
-    transition:0.5s;
-    text-decoration: none;
-    
-}
-
-.main-header_item-list{
-    margin-left: 200px;
-    display: flex;
-    list-style:none;
-}
-
-.account-link{
-    display: flex;
-    list-style:none;
-    position: absolute;
-    right:20px;
-}
-
-.menu{
- display:none;
-}
-
-@media all and (max-width:700px){
-    .menu{
-       display:inline;
-       position: fixed;
-       right: 10px;
-       top:9px;
-       z-index:5;
-       
-    }
-    .menu a{
-        padding-top:13px;
-        padding-bottom:20px;
-        color:black;
-        font-family:Arial;
-    }
-    .logo{
-        float:none;
-        display: flex;
-        position:fixed;
-    } 
-    
-    .main-header_nav{
-        display: none;
-        position: relative;
-        z-index: 2;
-        box-shadow:0px 0px 30px -10px gray;
-        border-radius: 0 0 15px 15px;
-        background-color:whitesmoke;
-        
-    }
-
-    .main-header_nav a{
-        padding:10px;
-        display:block;
-        width:100%;
-        text-align: center;
-        background-color:whitesmoke;
-        border-radius: 0 0;
-        border-radius: 0 0 15px 15px;
-    
-    }
-    .main-header_nav a:hover{
-        border-radius: 15px 15px 15px 15px; 
-    }
-    .account-link{
-        position:static;
-        display: inline;
-       
-       
-    }
-    .main-header_item-list{
-        display: inline;
-    }
-}
