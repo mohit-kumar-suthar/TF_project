@@ -58,14 +58,14 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
+        </div>
+        <div class="col-md-4 main-form">
             {%if email%}
             <div class="form_error">
                 <p>forgot password link send to {{email}}  </p>
             </div>
            
             {%endif%}
-        </div>
-        <div class="col-md-4 main-form">
             <form method="post">
                 {% csrf_token %}
                 <p>{{forgot_form.errors.email}}</p>
