@@ -150,4 +150,4 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'teamfirecode.project@gmail.com'
 EMAIL_HOST_PASSWORD = 'team@firecode'
 EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
+
