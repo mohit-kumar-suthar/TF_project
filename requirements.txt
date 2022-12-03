@@ -1,0 +1,16 @@
+asgiref==3.5.2
+cffi==1.15.1
+cryptography==38.0.3
+Django==3.0.6
+django-appconf==1.0.5
+django-background-tasks==1.2.5
+django-compat==1.0.15
+django-cryptography==1.1
+django-utils-six==2.0
+djangorestframework==3.14.0
+pycparser==2.21
+pytz==2022.6
+six==1.16.0
+sqlparse==0.4.3
+tzdata==2022.6
+whitenoise==6.2.0
