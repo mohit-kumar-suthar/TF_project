@@ -25,7 +25,7 @@ SECRET_KEY = 'oe(_-$%hxky^4$!!1^fzf7qox0v_i^xfsv7#wj@&c#1go96vxp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['teamfirecode.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -136,10 +136,8 @@ USE_TZ = True
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static')
-]
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = 'media/'
